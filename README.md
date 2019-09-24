@@ -1,5 +1,5 @@
 # PRÁCTICAS MÓDULO CLOUD
-
+[![Build Status](https://travis-ci.org/arananegra/cloud-module.svg?branch=master)](https://travis-ci.org/arananegra/cloud-module)
 ## Preparación
 
 * Cuenta de [Docker Hub](https://hub.docker.com/)
