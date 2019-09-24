@@ -8,6 +8,10 @@ RUN apt-get install -y curl
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 RUN apt-get install -y nodejs
 
+# App configuration
 WORKDIR /opt/app
-
 COPY . .
+RUN npm install --only=production
+EXPOSE 8888
+
+ENTRYPOINT [ "npm", "start"]
