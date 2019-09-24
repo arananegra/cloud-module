@@ -3,7 +3,7 @@ services:
  - docker
 script:
  - docker build -t cloud-deployment .
- after_success:
+after_success:
  - docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
  - docker tag cloud-deployment $DOCKER_USER/cloud-lc-deployment
  - docker push $DOCKER_USER/cloud-lc-deployment
